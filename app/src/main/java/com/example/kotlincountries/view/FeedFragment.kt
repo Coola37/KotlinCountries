@@ -6,9 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.kotlincountries.R
+import com.example.kotlincountries.adapter.CountryAdapter
+import com.example.kotlincountries.viewmodel.FeedViewModel
 
 
 class FeedFragment : Fragment() {
+    private lateinit var viewModel: FeedViewModel
+    private val countryAdapter = CountryAdapter(arrayListOf())
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,12 +21,20 @@ class FeedFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_feed, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //viewModel = ViewModelProviders.of(this).get(FeedViewModel::class.java))
+        //viewModel.refreshData()
+    }
 
 }
