@@ -26,16 +26,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/countryImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
             android:text="Country Name"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="7dp">
+            android:textStyle="bold">
 
         </TextView>
 
         <TextView
-            android:id="@+id/capital"
+            android:id="@+id/countryCapital"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Country Capital"
@@ -48,7 +51,7 @@
         </TextView>
 
         <TextView
-            android:id="@+id/region"
+            android:id="@+id/countryRegion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Country Region"
@@ -56,12 +59,12 @@
 
             android:layout_centerHorizontal="true"
             android:layout_margin="7dp"
-            android:layout_below="@id/capital">
+            android:layout_below="@id/countryCapital">
 
         </TextView>
 
         <TextView
-            android:id="@+id/currency"
+            android:id="@+id/countryCurrency"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Country Currency"
@@ -69,12 +72,12 @@
 
             android:layout_centerHorizontal="true"
             android:layout_margin="7dp"
-            android:layout_below="@id/region">
+            android:layout_below="@id/countryRegion">
 
         </TextView>
 
         <TextView
-            android:id="@+id/language"
+            android:id="@+id/countryLanguage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Country Language"
@@ -82,7 +85,7 @@
 
             android:layout_centerHorizontal="true"
             android:layout_margin="7dp"
-            android:layout_below="@id/currency">
+            android:layout_below="@id/countryCurrency">
 
         </TextView>
     </RelativeLayout>
