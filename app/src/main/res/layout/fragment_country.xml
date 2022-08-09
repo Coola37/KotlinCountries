@@ -13,9 +13,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:scaleType="fitCenter"
+            android:layout_marginTop="53dp"
             android:minHeight="200dp"
             android:paddingTop="10dp"
+            android:scaleType="fitCenter"
             android:src="@mipmap/ic_launcher_round">
 
 
