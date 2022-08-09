@@ -19,14 +19,14 @@ data class Country(
     @ColumnInfo(name = "capital")
     @SerializedName("capital")
     val countryCapital: String?,
-
+    //burdan sonra yok
     @ColumnInfo(name = "currency")
     @SerializedName("currency")
-    val countryCurrency: String,
+    val countryCurrency: String?,
 
     @ColumnInfo(name = "language")
     @SerializedName("language")
-    val countryLanguage: String,
+    val countryLanguage: String?,
 
     @ColumnInfo(name = "flag")
     @SerializedName("flag")

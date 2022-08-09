@@ -45,6 +45,7 @@ class FeedFragment : Fragment() {
             progressBar.visibility = View.VISIBLE
             viewModel.refreshData()
             swipeRefreshLayout.isRefreshing = false
+            viewModel.refreshFromAPI()
         }
 
         observeLiveData()
